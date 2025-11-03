@@ -233,7 +233,7 @@ export default function Home() {
                 Aspiring software engineer focused on scalable web apps, AI integration, and data‑driven solutions. Passionate about building user‑centric products at the intersection of cloud, AI, and modern UX.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 flex-wrap justify-center md:justify-start">
-                <Button size="lg" className="rounded-full px-8 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300" data-testid="button-download-cv" asChild>
+                <Button size="lg" className="rounded-full px-8 bg-gradient-to-r from-blue-300 to-purple-100 hover:from-blue-300 hover:to-purple-500 text-white shadow-lg hover:shadow-xl transition-all duration-300" data-testid="button-download-cv" asChild>
                  
                 <a href="/resume.pdf" download>Download CV</a>
                  
@@ -404,7 +404,7 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <button
+                    {/* <button
                       onClick={() => toggleLike(project.id)}
                       className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover-elevate transition-all duration-300 hover:bg-red-500 hover:text-white"
                       data-testid={`button-like-${project.id}`}
@@ -416,14 +416,14 @@ export default function Home() {
                             : 'text-gray-600'
                         }`}
                       />
-                    </button>
+                    </button>*/}
                   </div>
                   <div className="p-6 flex items-center justify-between gap-4">
                     <h4 className="text-xl font-semibold" data-testid={`text-project-title-${project.id}`}>
                       {project.title}
                     </h4>
                     {project.live && (
-                      <Button size="sm" variant="outline" className="rounded-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0 shadow-md hover:shadow-lg transition-all duration-300" asChild>
+                      <Button size="sm" variant="outline" className="rounded-full bg-gradient-to-r from-blue-100 to-purple-200 hover:from-blue-300 hover:to-purple-400 text-white-500 border-0 shadow-md hover:shadow-lg transition-all duration-300" asChild>
                         <a href={project.live} target="_blank" rel="noreferrer">Live Demo</a>
                       </Button>
                     )}
@@ -508,7 +508,7 @@ export default function Home() {
             </CardContent></Card>
             <Card className="border-border bg-gradient-to-r from-pink-50 to-purple-50 dark:from-pink-950/20 dark:to-purple-950/20 shadow-lg hover:shadow-xl transition-all duration-300"><CardContent className="p-6">
               <h4 className="font-semibold text-pink-700 dark:text-pink-300">APECT & POLYCET achievements</h4>
-              <p className="text-sm text-muted-foreground">Secured 42nd rank out of 7000+ students; AIR 1137 in POLYCET</p>
+              <p className="text-sm text-muted-foreground">Secured 42nd rank out of 7000+ students in POLYCET</p>
             </CardContent></Card>
           </div>
         </div>
